@@ -7,8 +7,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public abstract class AccountingAppAbstraction {
-    private static String url = "jdbc:mysql://localhost:3306/accounting_app_store";
-    private static String username = "user";
+    private static String url = "";
+    private static String username = "";
     private static String password = "";
     private static Connection connection;
 

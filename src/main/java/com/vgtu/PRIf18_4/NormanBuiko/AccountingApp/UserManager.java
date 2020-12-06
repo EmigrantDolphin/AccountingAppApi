@@ -47,9 +47,7 @@ public class UserManager {
             try{
                 userRepository.add(item);
             }catch (SQLException e){
-                GlobalMessage.show(e.getMessage());
-                item.username = "";
-                return;
+                throw new Exception(e.getMessage());
             }
         }else{
             throw new Exception("You are not an admin. Only admins can add users.");
